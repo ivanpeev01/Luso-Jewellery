@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Продукти</title>
+<link rel="stylesheet" href="style.css">
+<style>
+h1 { 
+  text-align:center;
+  font-size:26px;
+  color:orange;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-size:20px;
+}
+
+img {
+  opacity:1.0;
+}
+
+img:hover {
+  opacity:0.5;
+}
+</style>
+</head>
+<body style="background-color:#1F7A8C">
+<div class="container">
+<header>
+<svg height="110" width="460">
+<defs>
+<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" style="stop-color:#00a9e2;stop-opacity:1"/>
+<stop offset="100%" style="stop-color:#2c4268;stop-opacity:1"/>
+</linearGradient>
+</defs>
+<ellipse cx="210" cy="52" rx="105" ry="40" fill="url(#grad1)"/> 
+<text fill="white" font-size="26" font-family="Arial black" x="175" y="46">Luso</text>
+<text fill="white" font-size="26" font-family="Arial black" x="140" y="74">Jewellery</text>
+</svg>
+</header>
+<nav>
+<ul>
+<li><a href="pagehome.html">Начало</a></li>
+<li><a href="pageproducts.html">Продукти</a></li>
+<li><a href="pageorders.html">Поръчки</a></li>
+<li><a href="pageopinions.html">Мнения</a></li>
+<li><a href="pagejob.html">Работа</a></li>
+</ul>
+</nav>
+<aside>
+<a href="pageaboutus.html">За фирмата</a><br>
+<a href="pagepartners.html">Нашите партньори</a><br>
+<a href="pagegrowth.html">Развитие</a><br>
+<dropdown>За собственика
+<dropdown-content>
+<a href="pagefilm.html">Любим филм</a>
+<a href="pagemusic.html">Любима музика</a>
+</dropdown-content>
+</dropdown>
+</aside>
+<article>
+<h1>Нашите продукти</h1>
+<table>
+<tr>
+<td><p>Мъжки часовник Diesel</p></td>
+<td><p>Мъжки часовник Fossil</p></td>
+<td><p>Мъжки часовник Baume & Mercier</p></td>
+</tr>
+<td><img src="dieselwatch.jpg" width="250" height="250"></td>
+<td class="row"><img src="fossilwatch.jpg" width="250" height="250"> <span class="discount">Промоция</span></td>
+<td><img src="bmwatch.jpg" width="250" height="250"></td>
+</tr>
+<tr>
+<td><img src="diesellogo.jpg" width="180"></td>
+<td ><img src="fossillogo.jpg" width="180"></td>
+<td><img src="bmlogo.jpg" width="180"></td>
+</tr>
+<tr>
+<td><p>Цена:950.00лв</p></td>
+<td><p>Цена: <span class="line-through">750.00лв</span> 700.00лв</p></td>
+<td><p>Цена:450.00лв</p></td>
+</tr>
+<tr>
+<td><p>Женски часовник Seiko</p></td>
+<td><p>Женски часовник Casio</p></td>
+<td><p>Женски часовник Armani</p></td>
+</tr>
+<td><img src="seikowatch.jpg" width="250" height="250"></td>
+<td><img src="casiowatch.jpg" width="250" height="250"></td>
+<td class="row"><img src="armaniwatch.jpg" width="250" height="250"> <span class="discount">Промоция</span></td>
+</tr>
+<tr>
+<td><img src="seikologo.jpg" width="180"></td>
+<td><img src="casiologo.jpg" width="180"></td>
+<td ><img src="armanilogo.jpg" width="180"></td>
+</tr>
+<tr>
+<td><p>Цена:850.00лв</p></td>
+<td><p>Цена:650.00лв</p></td>
+<td><p>Цена: <span class="line-through">1050.00лв</span> 950.00лв</p></td>
+</tr>
+</table>
+</article>
+<news>
+<p class="txtnews"><b>НОВИНИ:</b><br>
+<i>50% SALE на смарт часовници</i></p>
+</news>
+<footer>
+<b>Copyright © Luso Jewellery</b>
+</footer>
+</div>
+</html>

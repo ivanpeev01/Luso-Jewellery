@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Поръчки</title>
+<link rel="stylesheet" href="style.css">
+<style>
+h1 {
+  margin-top:50px;
+  text-align:center;
+  color:orange;
+}
+
+p {
+  text-align:center;
+  font-size:26px;
+  color:orange;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+form {
+  font-size:18px;
+}
+</style>
+</head>
+<body style="background-color:#1F7A8C">
+<div class="container">
+<header>
+<svg height="110" width="460">
+<defs>
+<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" style="stop-color:#00a9e2;stop-opacity:1"/>
+<stop offset="100%" style="stop-color:#2c4268;stop-opacity:1"/>
+</linearGradient>
+</defs>
+<ellipse cx="210" cy="52" rx="105" ry="40" fill="url(#grad1)"/> 
+<text fill="white" font-size="26" font-family="Arial black" x="175" y="46">Luso</text>
+<text fill="white" font-size="26" font-family="Arial black" x="140" y="74">Jewellery</text>
+</svg>
+</header>
+<nav>
+<ul>
+<li><a href="pagehome.html">Начало</a></li>
+<li><a href="pageproducts.html">Продукти</a></li>
+<li><a href="pageorders.html">Поръчки</a></li>
+<li><a href="pageopinions.html">Мнения</a></li>
+<li><a href="pagejob.html">Работа</a></li>
+</ul>
+</nav>
+<aside>
+<a href="pageaboutus.html">За фирмата</a><br>
+<a href="pagepartners.html">Нашите партньори</a><br>
+<a href="pagegrowth.html">Развитие</a><br>
+<dropdown>За собственика
+<dropdown-content>
+<a href="pagefilm.html">Любим филм</a>
+<a href="pagemusic.html">Любима музика</a>
+</dropdown-content>
+</dropdown>
+</aside>
+<article>
+<h1>Завършване на поръчката</h1>
+<p><b>Лични данни</b></p>
+<table>
+<tr>
+<td>
+<form>
+Име: <input type="text" name="firstname">
+</form>
+<form>
+Фамилия: <input type="text" name="lastname">
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<form>
+Дата на раждане: <input type="date" name="birthday">
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<form">
+E-mail: <input type="email" name="email">
+</form>
+</td>
+<tr>
+<td>
+<form>
+Телефон: <input type="tel" name="tel">
+</form>
+</td>
+</tr>
+</table>
+<p><b>Данни за доставка</b></p>
+<table>
+<tr>
+<td>
+<form>
+Населено място: <select name="city">
+<option value="empty">---</option>
+<option value="sofia">София</option>
+<option value="plovdiv">Пловдив</option>
+<option value="stara zagora">Стара Загора</option>
+<option value="varna">Варна</option>
+<option value="burgas">Бургас</option>
+</select>
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<form>
+Пощенски код: <input type="text" name="ZIP code">
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<form>
+Улица: <input type="text" name="street">
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<form>
+Номер: <input type="number" name="number">
+</form>
+</td>
+</tr>
+</table>
+<p><b>Начин на плащане</b></p>
+<table>
+<tr>
+<td>
+<form>
+<input type="radio" name="methodofpayment" value="incash"> Наложен платеж<br>
+<input type="radio" name="methodofpayment" value="withcard"> Плащане с карта<br>
+<input type="radio" name="methodofpayment" value="banktransfer"> Банков превод<br>
+<input type="radio" name="methodofpayment" value="payoutpurchase"> Покупка на изплащане с TBI Bank
+</form> 
+</td>
+</tr>
+</table>
+<p><b>Завършване на поръчката</b></p>
+<p><b>Допълнителни коментари към поръчката:</b></p>
+<table>
+<tr>
+<td>
+<textarea style="margin-left:260px;font-size:14px;" rows="8" cols="55"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+<form style="margin-top:15px;margin-left:260px;font-size:18px;">
+<input type="checkbox" name="invoice" value="invoice"> Желаете ли фактура?<br>
+<input type="checkbox" name="general terms" value="general terms"> Запознах се с общите условия и задължителната информация за правата на лицата по<br> защита на личните данни и ги приемам.
+</form> 
+</table>
+<div style="margin-top:30px;margin-left:440px">
+<button type="button" onclick="alert ('Успешно поръчахте!')">Финализиране на поръчката</button>
+</div>
+</article>
+<news>
+<p class="txtnews"><b>НОВИНИ:</b><br>
+<i>50% SALE на смарт часовници</i></p>
+</news>
+<footer>
+<b>Copyright © Luso Jewellery</b>
+</footer>
+</div>
+</body>
+</html>
